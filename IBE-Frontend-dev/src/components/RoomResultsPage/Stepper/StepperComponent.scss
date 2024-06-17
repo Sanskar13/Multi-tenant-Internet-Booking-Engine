@@ -1,0 +1,31 @@
+.stepper-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+
+	.custom-stepper {
+		width: 30%;
+	}
+	.css-4ff9q7.Mui-completed {
+		color: #26266d;
+	}
+	.css-4ff9q7.Mui-active {
+		color: red;
+	}
+
+	.css-1u4zpwo-MuiSvgIcon-root-MuiStepIcon-root.Mui-completed {
+		color: #26266d;
+	}
+	.css-1u4zpwo-MuiSvgIcon-root-MuiStepIcon-root.Mui-active {
+		color: red;
+	}
+}
+
+@media screen and (max-width: 1300px) {
+	.stepper-container {
+		.custom-stepper {
+			width: 100%;
+		}
+	}
+}

@@ -1,0 +1,77 @@
+@import "../../../utils/variable";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+.footer-container {
+	font-family: "Poppins", sans-serif;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	background-color: $FOOTER_COLOR;
+	color: $WHITE_COLOR;
+	width: 100vw;
+	height: 8.21vh;
+	@media only screen and (max-width: 425px) {
+		width: 107.5vw;
+	}
+
+	.footer-kd {
+		padding-left: 80px;
+		font-size: 2rem;
+		width: 69vw;
+		background: transparent;
+		font-weight: 600;
+	}
+
+	.footer-legal-actions {
+		margin: 20px;
+		letter-spacing: 1px;
+		align-self: center;
+		margin-right: 56px;
+		font-weight: 600;
+	}
+
+	.footer-rights {
+		padding: 5px;
+		text-align: end;
+		font-weight: 600;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.footer-container {
+		.footer-kd {
+			padding: 20px;
+			margin: 0;
+		}
+
+		.footer-legal-actions {
+			padding: 2px 0px;
+
+			.footer-rights {
+				width: 100%;
+				padding: 5px;
+				margin: 0;
+				text-align: start;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.footer-kd {
+		display: none;
+	}
+
+	.footer-legal-actions {
+		display: flex;
+		flex-direction: column;
+		width: 100vw;
+
+		.footer-rights {
+			display: flex;
+			justify-content: center;
+		}
+	}
+}

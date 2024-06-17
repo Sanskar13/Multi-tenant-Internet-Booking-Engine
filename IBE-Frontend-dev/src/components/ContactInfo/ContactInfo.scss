@@ -1,0 +1,46 @@
+@import "../../utils/variable.scss";
+
+.info-card {
+	border: 1px solid gray;
+	border: none;
+	width: 18.5vw;
+	padding: 1rem;
+	background-color: $STEPPER_COLOR;
+	font-family: "Poppins", sans-serif;
+	@media screen and (max-width: 1440px) {
+		width: 23vw;
+	}
+	.help {
+		font-size: 20px;
+		font-weight: 500;
+		.info-cancel-logo {
+			width: 17px;
+			height: 17px;
+			position: relative;
+			top: 10px;
+			left: 5px;
+			cursor: pointer;
+		}
+	}
+	.call {
+		font-size: 15px;
+		padding-top: 1.3rem;
+		font-weight: 450;
+	}
+	.date-time {
+		color: gray;
+		font-size: 13px;
+		padding-top: 0.5rem;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.info-card {
+		width: 50vw;
+	}
+}
+@media screen and (max-width: 425px) {
+	.info-card {
+		width: 74%;
+	}
+}

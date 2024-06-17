@@ -1,0 +1,104 @@
+@import "../../../utils//variable.scss";
+
+.search-form-container {
+	height: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	width: 95vw;
+
+	.rooms-bed {
+		display: flex;
+		width: 21rem;
+		align-items: center;
+		justify-content: space-between;
+		position: relative;
+		bottom: 9px;
+	}
+
+	.number-of-guest {
+		width: 20rem;
+		height: 100%;
+		display: flex;
+		align-items: center;
+	}
+
+	.search-rooms {
+		width: 10rem;
+	}
+
+	.search-beds {
+		width: 10rem;
+	}
+
+	.search-date {
+		height: 100%;
+	}
+
+	.search-date-btn {
+		width: 15rem;
+		display: flex;
+		border-radius: 7px;
+		height: 8.5vh;
+
+		.search-dates-btn {
+			width: 100rem;
+			height: 100%;
+			background-color: $FOOTER_COLOR;
+			color: $WHITE_COLOR;
+			font-size: 1rem;
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	//new added
+	.search-form-container {
+		.search-date-btn {
+			position: relative;
+			left: -11px;
+			height: 90px;
+			width: 20rem;
+		}
+	}
+
+	.number-of-guest {
+		width: 500px;
+	}
+
+	//changed
+	.search-form-container {
+		width: 100vw;
+		position: relative;
+		right: 70px;
+		.rooms-bed {
+			display: flex;
+		}
+
+		.search-date {
+			position: relative;
+			left: 10px;
+		}
+
+		.search-beds {
+			margin: 10px;
+		}
+
+		.search-rooms {
+			margin: 5px;
+		}
+	}
+}
+
+@media screen and (min-width: 769px) and (max-width: 1500px) {
+	.search-date {
+		width: 28%;
+	}
+}
+
+@media only screen and (min-width: 1500px) {
+	.number-of-guest {
+		position: relative;
+		bottom: 4.5px;
+	}
+}

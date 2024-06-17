@@ -1,0 +1,335 @@
+@import "../utils/variable.scss";
+
+.stepper {
+	height: 8.5vh;
+	background-color: $STEPPER_COLOR;
+}
+.select-dropdown {
+	margin-top: 6px;
+	border: 1px solid gray;
+	border-radius: 4px;
+	height: 4.7vh;
+	width: 26.2vw;
+}
+.timer {
+	background-color: $FOOTER_COLOR;
+	color: white;
+	font-size: 20px;
+	padding: 0.5%;
+	text-align: center;
+}
+
+.checkout-body {
+	font-family: "Poppins", sans-serif;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+
+	.checkout-info-container {
+		width: 60%;
+		.checkout-heading {
+			padding: 3rem 0rem 0.8rem 3rem;
+			font-weight: 600;
+			font-size: 25px;
+		}
+	}
+
+	.traveler-info {
+		padding: 0% 5% 3% 5%;
+
+		.traveler-info-title {
+			font-weight: 600;
+			padding: 2%;
+			background-color: $STEPPER_COLOR;
+			border-radius: 4px;
+		}
+
+		.traveler-info-content {
+			padding: 1%;
+
+			.billing-btn {
+				float: right;
+				background-color: $FOOTER_COLOR;
+				padding: 2%;
+			}
+
+			.info-fields {
+				width: 50%;
+				color: gray;
+				padding: 1% 1% 1% 0;
+			}
+		}
+	}
+
+	.billing-info {
+		padding: 0% 5% 3% 5%;
+
+		.billing-info-title {
+			font-weight: 600;
+			padding: 2%;
+			background-color: $STEPPER_COLOR;
+			border-radius: 4px;
+		}
+
+		.billing-info-content {
+			padding: 1% 1% 8% 1%;
+			.buttons-up-down {
+				float: right;
+				display: flex;
+				flex-direction: row;
+				justify-content: space-around;
+				align-items: center;
+				width: 50%;
+			}
+
+			.billing-btn {
+				float: right;
+				background-color: $FOOTER_COLOR;
+				padding: 5%;
+			}
+
+			.info-fields {
+				display: flex;
+				flex-direction: column;
+				width: 50%;
+				color: gray;
+				padding: 1% 1% 1% 0;
+			}
+		}
+	}
+
+	.payment-info {
+		padding: 0% 5% 5% 5%;
+
+		.payment-info-title {
+			font-weight: 600;
+			padding: 2%;
+			background-color: $STEPPER_COLOR;
+			border-radius: 4px;
+		}
+
+		.payment-info-content {
+			padding: 1%;
+			.buttons-up-down-payment {
+				float: right;
+				display: flex;
+				flex-direction: row;
+				justify-content: space-around;
+				align-items: center;
+				width: 40%;
+			}
+			.due-amt {
+				margin-left: 75%;
+				padding: 3% 0% 3% 0%;
+			}
+			.billing-btn {
+				float: right;
+				background-color: $FOOTER_COLOR;
+				padding: 2%;
+			}
+			.checkboxes {
+				.offer-checkbox {
+					padding: 1% 1% 1% 0%;
+					color: gray;
+				}
+				.terms-checkbox {
+					color: gray;
+				}
+			}
+
+			.info-fields {
+				width: 50%;
+				color: gray;
+				padding: 1% 1% 1% 0;
+			}
+		}
+	}
+
+	background-color: white;
+
+	.itinerary {
+		padding: 4rem 4rem 3rem 0rem;
+	}
+
+	.feedback {
+		display: flex;
+		padding-top: 1.5rem;
+	}
+}
+
+.stsearch-box input {
+	width: 100%;
+	padding: 14px;
+	border-radius: 5px;
+	border: none;
+}
+@media screen and (max-width: 768px) and (min-width: 426px) {
+	.select-dropdown {
+		width: 82vw;
+	}
+	.checkout-body {
+		.checkout-heading {
+			position: relative;
+			right: 110px;
+		}
+		.traveler-info {
+			position: relative;
+			right: 92px;
+			width: 82vw;
+			.traveler-info-content {
+				width: 72vh;
+				.info-fields {
+					width: 80%;
+				}
+				.billing-btn {
+					float: none;
+				}
+			}
+		}
+		.billing-info {
+			position: relative;
+			right: 92px;
+			width: 82vw;
+			.billing-info-content {
+				width: 72vh;
+				.due-amt {
+					margin-left: 50% !important;
+					position: relative;
+					left: none;
+				}
+				.billing-btn {
+					padding: 1rem;
+				}
+				.buttons-up-down {
+					float: none;
+					display: flex;
+					flex-direction: row;
+					justify-content: space-between;
+					align-items: center;
+					width: 80%;
+				}
+				.info-fields {
+					width: 80%;
+				}
+			}
+		}
+		.payment-info {
+			position: relative;
+			right: 92px;
+			width: 82vw;
+			.payment-info-content {
+				width: 72vh;
+				.buttons-up-down-payment {
+					float: none;
+					display: flex;
+					flex-direction: row;
+					justify-content: space-between;
+					align-items: center;
+					width: 80%;
+				}
+				.info-fields {
+					width: 80%;
+				}
+			}
+		}
+		.checkout-details {
+			position: relative;
+			left: 39px;
+		}
+		.itinerary {
+			.card {
+				width: 600px;
+				.line-tag {
+					width: 33rem;
+				}
+			}
+		}
+		.contact-info {
+			.info-card {
+				width: 86%;
+			}
+		}
+		.feedback {
+			padding-bottom: 2rem;
+			.feedback-component {
+				width: 85%;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 425px) {
+	.select-dropdown {
+		width: 82vw;
+	}
+	.checkout-body {
+		.traveler-info {
+			position: relative;
+			right: 60px;
+			width: 33vh;
+			.traveler-info-content {
+				width: 40vh;
+				.info-fields {
+					width: 80%;
+				}
+				.billing-btn {
+					float: none;
+				}
+			}
+		}
+		.billing-info {
+			position: relative;
+			right: 60px;
+			width: 33vh;
+			.billing-info-content {
+				width: 40vh;
+				.buttons-up-down {
+					float: none;
+					display: flex;
+					flex-direction: row;
+					justify-content: space-around;
+					align-items: center;
+					width: 80%;
+				}
+				.info-fields {
+					width: 80%;
+				}
+			}
+		}
+		.payment-info {
+			position: relative;
+			right: 60px;
+			width: 33vh;
+			.payment-info-content {
+				width: 40vh;
+				.buttons-up-down-payment {
+					float: none;
+					display: flex;
+					flex-direction: row;
+					justify-content: space-between;
+					align-items: center;
+					width: 80%;
+				}
+				.info-fields {
+					width: 80%;
+				}
+			}
+		}
+		.checkout-details {
+			position: relative;
+			left: 27px;
+		}
+		.contact-info {
+			.info-card {
+				width: 78%;
+			}
+		}
+		.feedback {
+			padding-bottom: 2rem;
+			.feedback-component {
+				width: 76%;
+			}
+		}
+	}
+}

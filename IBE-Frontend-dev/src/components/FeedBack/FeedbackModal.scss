@@ -1,0 +1,73 @@
+.feedback-modal {
+	background-color: #fff;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	padding: 20px;
+	width: 500px;
+	max-width: 90%;
+	margin: 0 auto;
+	text-align: center;
+
+	h2 {
+		font-size: 1.5rem;
+		margin-bottom: 20px;
+	}
+
+	.rating-container {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 20px;
+
+		.emoji {
+			cursor: pointer;
+			font-size: 2rem;
+			margin: 0 5px;
+			transition: transform 0.3s;
+
+			&:hover {
+				transform: scale(1.2);
+			}
+
+			&.selected {
+				transform: scale(1.5);
+			}
+		}
+	}
+
+	textarea {
+		width: 100%;
+		height: 20px;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+		padding: 8px;
+		margin-bottom: 20px;
+		resize: none;
+		font-size: 1rem;
+	}
+
+	button {
+		background-color: #26266d;
+		color: #fff;
+		border: none;
+		border-radius: 4px;
+		padding: 10px 20px;
+		font-size: 1rem;
+		cursor: pointer;
+		transition: background-color 0.3s;
+
+		&:hover {
+			background-color: #26266d;
+		}
+	}
+}
+
+@media only screen and (max-width: 430px) {
+	.react-responsive-modal-modal {
+		width: 300px;
+
+		.feedback-modal {
+			position: relative;
+			right: 10px;
+		}
+	}
+}

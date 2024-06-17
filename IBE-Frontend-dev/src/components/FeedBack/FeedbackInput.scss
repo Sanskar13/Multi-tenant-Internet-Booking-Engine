@@ -1,0 +1,36 @@
+@import "../../utils/variable.scss";
+.feedback-component {
+	border: 1px solid gray;
+	padding: 1.2rem;
+	background-color: $STEPPER_COLOR;
+	font-family: "Poppins", sans-serif;
+
+	.feed-btn {
+		outline: none;
+		border: none;
+		background: transparent;
+		font-size: 20px;
+		font-weight: 540;
+		width: 18vw;
+		@media screen and (max-width: 1440px) {
+			width: 22.5vw;
+		}
+	}
+}
+@media screen and (max-width: 768px) {
+	.feedback-component {
+		width: 53%;
+		text-align: center;
+	}
+}
+@media screen and (max-width: 425px) {
+	.feedback-component {
+		width: 68%;
+		text-align: center;
+
+		.feed-btn {
+			width: fit-content;
+			text-align: center;
+		}
+	}
+}

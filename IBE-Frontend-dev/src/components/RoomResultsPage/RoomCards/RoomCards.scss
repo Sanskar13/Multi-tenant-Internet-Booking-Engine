@@ -1,0 +1,187 @@
+@import "../../../utils/variable.scss";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.room-cards {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	font-family: "Poppins", sans-serif;
+	font-size: 18px;
+	margin: 5px;
+	width: 95%;
+	position: relative;
+	left: 10px;
+
+	.room-type {
+		display: flex;
+		margin: 10px 0px;
+	}
+	.room-card {
+		box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+		transition: 0.3s;
+		width: 30%;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: space-between;
+		padding: 0px;
+		flex-wrap: wrap;
+		color: $BROWN_COLOR;
+		border-radius: 10px;
+		margin: 10px;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+		transition: box-shadow 0.3s ease;
+		cursor: pointer;
+
+		&:hover {
+			box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+			transform: translateY(-4px);
+		}
+
+		.room-deal {
+			display: flex;
+			position: relative;
+			right: 25px;
+
+			img {
+				width: fit-content;
+				height: 36px;
+			}
+
+			.deal-text {
+				position: relative;
+				right: 125px;
+				top: 8px;
+				color: $WHITE_COLOR;
+				font-size: 0.8rem;
+			}
+		}
+
+		.room-price {
+			margin: 10px 0px;
+			.room-amount {
+				font-weight: 700;
+				color: $BLACK_COLOR;
+			}
+
+			.per-night {
+				font-size: 1rem;
+				margin: 5px 0px;
+			}
+		}
+
+		.search-room-btn {
+			background-color: $FOOTER_COLOR;
+			color: $WHITE_COLOR;
+			width: 60%;
+		}
+
+		.room-capacity {
+			display: flex;
+
+			img {
+				width: 20px;
+				height: 20px;
+			}
+
+			.room-vector-logo {
+				margin: 0px 5px;
+			}
+		}
+
+		.area-in-sqft {
+			display: flex;
+			margin: 5px 0px;
+
+			.inclusive {
+				font-style: italic;
+			}
+
+			.sq-ft {
+				margin: 0px 10px;
+			}
+		}
+
+		.room-location {
+			display: flex;
+			margin: 5px 0px;
+		}
+
+		.room-type-content {
+			height: 40vh;
+			width: calc(100% - 20px);
+			padding: 0 10px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-evenly;
+			margin: 10px;
+		}
+
+		.carousel {
+			height: 190px;
+			border-radius: 2px;
+			width: 100%;
+			object-fit: cover;
+
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+
+		.room-name-rating-review {
+			display: flex;
+			width: 100%;
+			justify-content: space-between;
+			align-items: center;
+
+			.room-name {
+				font-size: 16px;
+				display: flex;
+				flex-wrap: wrap;
+				color: $BLACK_COLOR;
+				font-weight: bold;
+			}
+
+			.rating-review {
+				display: flex;
+				flex-direction: column;
+				align-items: end;
+				padding: 0px 10px;
+				.room-review {
+					font-size: 15px;
+				}
+
+				.room-rating {
+					padding: 5px;
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+					width: fit-content;
+					font-weight: bold;
+					color: $BLACK_COLOR;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.room-cards {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		font-family: "Poppins", sans-serif;
+		font-size: 14px;
+		margin: 5px;
+		width: 100vw;
+
+		.room-card {
+			width: 60vw;
+			position: relative;
+			left: 100px;
+			font-size: 18px;
+		}
+	}
+}

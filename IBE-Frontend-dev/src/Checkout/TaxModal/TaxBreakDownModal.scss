@@ -1,0 +1,68 @@
+.react-responsive-modal-modal.modal {
+	max-width: 60%; 
+	width: auto !important;
+	font-family: "Poppins", sans-serif !important;
+}
+
+.react-responsive-modal-overlay {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+	background-color: white;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	line-height: 1.9;
+	font-family: "Poppins", sans-serif;
+	width: 330px;
+
+	.modal-header {
+		font-weight: 600;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.modal-body {
+		margin-top: 20px;
+		.room-type-info {
+			margin-top: -1.3rem;
+			display: flex;
+			justify-content: space-between;
+		}
+		.room-rate-info {
+			margin-bottom: 1.3rem;
+			display: flex;
+			justify-content: space-between;
+		}
+		.room-total-info {
+			display: flex;
+			justify-content: space-between;
+			margin: 1rem 0 1rem 0;
+		}
+		.room-tax-info {
+			display: flex;
+			justify-content: space-between;
+		}
+		.room-resort-fee-info {
+			display: flex;
+			justify-content: space-between;
+		}
+		.room-occupancy-tax-info {
+			display: flex;
+			justify-content: space-between;
+		}
+		.room-due-resort-info {
+			display: flex;
+			justify-content: space-between;
+		}
+		.room-due-now-info {
+			display: flex;
+			justify-content: space-between;
+		}
+	}
+	.date-rate {
+		display: flex;
+		justify-content: space-between;
+	}
+}

@@ -1,0 +1,271 @@
+@import "../../utils//variable.scss";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.carousal-img {
+	margin-top: -30px;
+}
+.arrowButtonPrev {
+	background-color: rgb(43, 39, 39);
+	color: white;
+	width: 80px;
+	height: 80px;
+	font-size: 40px;
+	opacity: 0.85;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 2;
+}
+.arrowButtonNext {
+	background-color: rgb(43, 39, 39);
+	color: white;
+	width: 80px;
+	height: 80px;
+	font-size: 40px;
+	opacity: 0.85;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 2;
+	right: 0px;
+}
+
+.room-type-title {
+	font-size: 30px;
+	font-weight: 600;
+	position: relative;
+	top: 340px;
+	left: 105px;
+	color: white;
+	z-index: 9999;
+}
+.room-modal-info {
+	display: flex;
+	flex-direction: row;
+
+	.amenities {
+		width: 50%;
+		
+		.all-amenities {
+			display: flex;
+			flex-direction: column;
+			padding-top: 1.5rem;
+			width: 80%;
+
+			.amenities-part {
+				display: flex;
+				flex-wrap: wrap;
+				padding: 0;
+				list-style: none;
+				width: 125%;
+
+				li {
+					width: 50%; 
+					display: flex;
+					align-items: center;
+					margin-bottom: 0.5rem;
+				}
+
+				@media screen and (max-width: 768px) {
+					li {
+						width: 100%;
+					}
+				}
+				img {
+					margin-right: 0.5rem;
+					width: 15px;
+					height: 15px;
+				}
+			}
+		}
+	}
+
+	.room-info {
+		padding-left: 7rem;
+		padding-right: 3rem;
+		padding-top: 2.5rem;
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+		.room-sub-details {
+			display: flex;
+			.sub-details-one {
+				width: 70%;
+			}
+		}
+		.room-description {
+			line-height: 160%;
+			width: 90%;
+		}
+		.room-sub-info {
+			width: 60%;
+			color: gray;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			padding-bottom: 2rem;
+		}
+		.room-rates {
+			font-size: 25px;
+			font-weight: 400;
+			padding-top: 30px;
+		}
+		.room-normal-package {
+			display: flex;
+			flex-direction: row;
+			margin: 1rem;
+			margin-left: 0;
+			width: 55%;
+			height: 57%;
+			
+			&:hover {
+				cursor: pointer; 
+				box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+					0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			}
+			.room-rate-desc {
+				box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+				padding: 1.3rem;
+				margin-left: 0;
+				width: 70%;
+				.title {
+					font-size: 20px;
+					font-weight: 300;
+					padding-bottom: 1rem;
+				}
+				.description {
+					color: gray;
+					line-height: 150%;
+				}
+			}
+			.room-rate-value {
+				box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+				background-color: #eff0f1;
+				width: 30%;
+				display: flex;
+				flex-direction: column;
+				align-items: end;
+
+				border-radius: 4px;
+				padding: 1.3rem;
+				.price {
+					font-size: 27px;
+					font-weight: 580;
+				}
+				.price-per-night {
+					color: gray;
+				}
+				.package-btn {
+					width: 105%;
+					height: 80%;
+					margin-top: 1rem;
+					padding: 0.7rem;
+					background-color: $FOOTER_COLOR;
+					color: white;
+					border-radius: 4px;
+					border: none;
+					font-size: 15px;
+					position: relative;
+					left: 5px;
+				}
+			}
+		}
+		.promocode {
+			.label {
+				color: gray;
+			}
+			.promocode-input {
+				width: 15%;
+				padding: 0.8rem;
+				margin-top: 0.3rem;
+				margin-bottom: 5rem;
+			}
+			.apply-promo-btn {
+				background-color: $FOOTER_COLOR;
+				color: white;
+				padding: 0.95rem;
+				margin-left: 0.7rem;
+				font-size: 13px;
+				border-radius: 4px;
+				border: none;
+			}
+		}
+	}
+}
+.customModal {
+	max-width: 90%;
+	max-height: auto;
+	overflow: hidden;
+	background: white;
+	padding: 0;
+	font-family: "Poppins", sans-serif;
+	font-size: 13px;
+}
+.carousal-image {
+	object-fit: cover;
+	width: 100%;
+	height: 400px;
+}
+
+@media screen and (max-width: 425px) {
+	.room-type-title {
+		position: relative;
+		left: 75px;
+	}
+	.room-modal-info .room-info .room-sub-details {
+		padding-left: -0 !important;
+		width: 160% !important;
+		padding-right: 0 !important;
+	}
+	.room-sub-details {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+	.room-modal-info .amenities {
+		margin-top: 1.5rem;
+	}
+	.room-modal-info .room-info .room-rates {
+		position: relative;
+		right: 20px;
+	}
+	.room-modal-info .room-info .room-normal-package {
+		display: flex;
+		flex-direction: column;
+		.room-rate-desc {
+			width: 100%;
+			position: relative;
+			right: 23px;
+		}
+		.room-rate-value {
+			position: relative;
+			right: 23px;
+			width: 100%;
+			display: flex;
+			align-items: center;
+		}
+	}
+}
+
+@media screen and (max-width: 770px) {
+	.room-modal-info .room-info {
+		padding-left: 55px !important;
+	}
+	.room-normal-package {
+		width: 100% !important;
+	}
+	.promocode-input {
+		width: 40% !important;
+	}
+	.apply-promo-btn {
+		width: 20% !important;
+	}
+	.sub-details-one {
+		width: 100%;
+		.room-sub-info {
+			max-width: 600px;
+			width: 90% !important;
+		}
+	}
+}

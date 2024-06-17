@@ -1,0 +1,279 @@
+@import "../../utils/variable.scss";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+body {
+	overflow-x: hidden;
+}
+
+.landing-page-container {
+	font-family: "Poppins", sans-serif;
+	background-image: url("../../assets/backgroung-image.jpg");
+	background-size: cover;
+	background-position: center;
+	height: 83vh;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	color: $BLACK_COLOR;
+	padding: 26px 387px 15px 70px;
+	font-weight: 600;
+
+	.search-form-container {
+		border: 1px solid gray;
+		border-radius: 5px;
+		box-sizing: border-box;
+		background-color: white;
+		height: 585px;
+		width: 380px;
+		display: flex;
+		flex-direction: column;
+		align-items: normal;
+		margin-bottom: 8rem;
+		@media only screen and (max-width: 425px) {
+			position: relative;
+			left: -28px;
+		}
+		@media only screen and (max-width: 768px) {
+			position: relative;
+			left: -28px;
+		}
+		.search-field {
+			padding: 2.75rem;
+			padding-right: 4.2rem;
+			padding-bottom: 0rem;
+			font-weight: 600;
+
+			.search-input {
+				padding-top: 0.3rem;
+			}
+		}
+
+		.date-field {
+			display: flex;
+			flex-direction: column;
+			padding-left: 2.75rem;
+			padding-top: 0.8rem;
+			padding-bottom: 0rem;
+			@media only screen and (min-width: 425px) and (max-width: 767px) {
+				width: 320px;
+			}
+			@media only screen and (min-width: 768px) and (max-width: 1439px) {
+				width: 336px;
+			}
+			@media only screen and (min-width: 1440px) {
+				width: 300px;
+			}
+
+			.date-picker {
+				margin-top: 0.3rem;
+				width: 87%;
+			}
+
+			.calender-with-price {
+				border: 0.0001px solid gray;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				color: $BLACK_COLOR;
+				height: 46px;
+				font-size: 1rem;
+				border-radius: 2px;
+				position: relative;
+				padding: 0px 10px;
+				right: 10px;
+				width: 250px;
+			}
+
+			.react-calendar {
+				width: 896px;
+				height: 477px;
+			}
+
+			.react-calendar__month-view__days__day--weekend {
+				color: $BLACK_COLOR;
+			}
+
+			.react-calendar__tile--active {
+				background-color: $BORDER_COLOR;
+				color: $BLACK_COLOR;
+			}
+
+			.react-calendar__tile--rangeStart,
+			.react-calendar__tile--rangeEnd {
+				background-color: $FOOTER_COLOR;
+				color: $WHITE_COLOR;
+			}
+
+			.react-calendar__navigation__label {
+				display: flex;
+				justify-content: space-around;
+				align-items: center;
+				color: $BROWN_COLOR;
+			}
+			.react-calendar__tile {
+				padding: 1.5px;
+				font-size: 15px;
+				border: 2.5px solid white;
+			}
+
+			.react-calendar__month-view__weekdays__weekday {
+				color: $BROWN_COLOR;
+			}
+			.react-calendar--doubleView .react-calendar__viewContainer {
+				border-bottom: 1px solid gray;
+			}
+			.calender-btn-msge {
+				margin-top: -6.5rem;
+				margin-left: 1rem;
+				float: right;
+				margin-right: 10px;
+				display: flex;
+				flex-direction: column;
+				align-items: end;
+				margin-right: 20px;
+				.calender-bottom-msge {
+					margin-top: 0.3rem;
+				}
+			}
+
+			.apply-dates-btn {
+				font-size: 1.2rem;
+				background-color: $FOOTER_COLOR;
+				color: $WHITE_COLOR;
+				padding: 7px 12px;
+				border-radius: 5px;
+			}
+			.apply-dates-btn.disabled-button {
+				background-color: #ccc;
+				color: #666;
+				cursor: not-allowed;
+			}
+		}
+		.guest-stay-detail {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-evenly;
+
+			padding: 1.5rem;
+			padding-top: 0.8rem;
+			padding-bottom: 0rem;
+			padding-right: 3.3rem;
+
+			.guest-field {
+				display: flex;
+				flex-direction: column;
+				width: 60%;
+
+				.option-label {
+					color: gray;
+					font-size: 10px;
+				}
+				.guest-input {
+					padding-top: 0.3rem;
+					overflow: auto;
+					.guest-selected-options {
+						overflow: hidden;
+						text-overflow: ellipsis;
+						white-space: nowrap;
+					}
+				}
+
+				.guest-dropdown-item {
+					display: flex;
+					flex-direction: row;
+				}
+			}
+			.room-field {
+				display: flex;
+				flex-direction: column;
+				width: 21%;
+				.room-input {
+					padding-top: 0.3rem;
+				}
+			}
+		}
+		.accessibility-field {
+			padding: 0rem 2.75rem;
+		}
+
+		.button-search {
+			margin: auto;
+			.search-btn {
+				color: white;
+				background-color: #26266d;
+				border-radius: 4px;
+				width: 8.75rem;
+				height: 2.75rem;
+				padding: 12px 20px 12px 20px;
+				gap: 20px;
+				font-weight: 600;
+			}
+		}
+		.accessibility-text {
+			font-size: 12px;
+			color: gray;
+		}
+		.wheelchair-image {
+			width: 15px;
+			height: 15px;
+		}
+	}
+	.css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input {
+		padding: 0.7rem;
+		height: 56px;
+	}
+
+	@media only screen and (max-width: 426px) {
+		.landing-page-container .search-form-container {
+			position: relative;
+			left: 20px;
+		}
+
+		.search-field,
+		.date-field,
+		.guest-stay-detail,
+		.accessibility-field,
+		.button-search {
+			padding: 15px;
+		}
+
+		.guest-stay-detail {
+			flex-direction: column;
+			align-items: center;
+
+			.guest-field,
+			.room-field {
+				width: 100%;
+				margin-bottom: 15px;
+			}
+		}
+	}
+}
+
+.guest-options {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 240px;
+	height: 38px;
+	border-radius: 2px;
+	.age-category-guest-type {
+		font-size: 15px;
+		color: gray;
+	}
+
+	.counter-value {
+		font-size: 20px;
+	}
+
+	.counter-button-add {
+		font-size: 23px;
+		color: black;
+		margin-bottom: 0.5rem;
+	}
+	.counter-button-subtract {
+		margin-bottom: 0.3rem;
+		font-size: 25px;
+		color: black;
+	}
+}

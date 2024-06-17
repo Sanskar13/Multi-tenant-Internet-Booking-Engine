@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.room-result-panel-card {
+	display: flex;
+	flex-direction: column;
+	margin: 10px;
+	font-family: "Poppins", sans-serif;
+	font-size: 14px;
+
+	.room-result-title {
+		margin-left: 20px;
+		font-size: 2rem;
+		font-weight: medium;
+
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+
+		.room-title {
+			font-size: 1.6rem;
+			display: flex;
+			align-items: center;
+			font-weight: 550;
+		}
+
+		.room-results {
+			display: flex;
+
+			.pagination-title {
+				width: 15vw;
+			}
+		}
+
+		.room-sort-price {
+			.price-sort-dropdown {
+				border: none;
+				box-shadow: none;
+				outline: none;
+			}
+		}
+
+		.room-bar-end {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: space-around;
+			font-size: 1.2rem;
+			width: 40%;
+
+			.room-page-number {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				font-weight: 600;
+				width: 70%;
+
+				.pagination-title {
+					font-size: 15px;
+				}
+
+				.paginated-btn {
+					Button {
+						border: none;
+						outline: none;
+						background-color: transparent;
+						font-size: 1rem;
+						color: #000;
+					}
+				}
+			}
+
+			.room-vertical-line {
+				border-left: 1px solid #000;
+				height: 70%;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.itinerary-wrapper {
+		display: none;
+	}
+	.room-display {
+		position: relative;
+		right: 150px;
+	}
+
+	.room-result-title {
+		width: 80vw;
+		position: relative;
+		right: 65px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.room-title {
+		width: 30%;
+		display: flex;
+		margin: 10px;
+		position: relative;
+		left: 158px;
+	}
+	
+
+	.room-bar-end {
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		left: 15px;
+
+		.room-results {
+			display: flex;
+			width: 100vw;
+			position: relative;
+			left: 74px;
+		}
+
+		.paginated-btn {
+			display: flex;
+		}
+
+		.pagination-title {
+			display: none;
+		}
+
+		.room-page-number {
+			display: flex;
+			margin: 5px;
+		}
+	}
+
+	.room-sort-price {
+		margin: 0px 30px;
+		margin: 5px;
+		width: 20vw;
+	}
+}
+@media screen and (max-width: 425px) {
+	.itinerary-wrapper {
+		display: none;
+	}
+	.room-title {
+		width: 60%;
+		display: flex;
+		margin: 10px;
+		position: relative;
+		left: 95px;
+	}
+	.room-result-title {
+		position: relative;
+		left: -129px;
+		display: flex;
+		flex-direction: column;
+	}
+	.room-bar-end {
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		left: 15px;
+
+		.room-results {
+			display: flex;
+			width: 100vw;
+			position: relative;
+			left: 74px;
+		}
+	}
+}

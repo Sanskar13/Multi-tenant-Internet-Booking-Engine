@@ -1,0 +1,185 @@
+@import "../../../../utils/variable.scss";
+
+.search-date-container {
+	border-radius: 5px;
+
+	.search-date-inner-field {
+		display: flex;
+		justify-content: space-between;
+
+		.check-in-date,
+		.check-out-date {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			margin-left: 10px;
+			width: 40%;
+			color: #666;
+
+			.search-date-heading {
+				color: $BROWN_COLOR;
+			}
+
+			.any-date {
+				font-weight: bold;
+			}
+		}
+	}
+
+	.inner-middle-line {
+		border-left: 0.001px solid #ccc;
+	}
+
+	.calender-icon {
+		display: flex;
+
+		img {
+			display: flex;
+			float: right;
+			align-self: center;
+			width: 24px;
+			height: 24px;
+		}
+	}
+}
+
+.calender-with-price {
+	border: 0.0001px solid gray;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: $BLACK_COLOR;
+	width: 40rem;
+
+	height: 8.5vh;
+	font-size: 1rem;
+	border-radius: 5px;
+	position: relative;
+	padding: 0px 10px;
+	right: 10px;
+	bottom: 8px;
+	transition: none !important;
+}
+
+.calender-title {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.react-calendar {
+	width: 896px;
+	height: 477px;
+	transition: none !important;
+}
+
+.react-calendar__month-view__days__day--weekend {
+	color: $BLACK_COLOR;
+}
+
+.react-calendar__tile--active {
+	background-color: $BORDER_COLOR;
+	color: $BLACK_COLOR;
+}
+
+.react-calendar__tile--rangeStart,
+.react-calendar__tile--rangeEnd {
+	background-color: $FOOTER_COLOR;
+	color: $WHITE_COLOR;
+}
+
+.react-calendar__navigation__label {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	color: $BROWN_COLOR;
+}
+.react-calendar__tile {
+	padding: 1.5px;
+	font-size: 15px;
+	border: 2.5px solid white;
+}
+
+.react-calendar__month-view__weekdays__weekday {
+	color: $BROWN_COLOR;
+}
+.react-calendar--doubleView .react-calendar__viewContainer {
+	border-bottom: 1px solid gray;
+}
+.calender-btn-msge {
+	margin-top: -6.5rem;
+	margin-left: 1rem;
+	float: right;
+	margin-right: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: end;
+	margin-right: 20px;
+	position: relative;
+	top: 30px;
+	.calender-bottom-msge {
+		margin-top: 0.3rem;
+	}
+}
+
+.apply-dates-btn {
+	font-size: 1.2rem;
+	background-color: $FOOTER_COLOR;
+	color: $WHITE_COLOR;
+	padding: 7px 12px;
+	border-radius: 5px;
+}
+.apply-dates-btn.disabled-button {
+	background-color: #ccc;
+	color: #666;
+	cursor: not-allowed;
+}
+@media screen and (max-width: 425px) {
+	.calender-with-price {
+		width: 70vw;
+		position: relative;
+		left: -17px;
+		height: 8.5vh;
+	}
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+	.calender-with-price {
+		width: 40vw;
+		position: relative;
+		left: -17px;
+		height: 8.5vh;
+	}
+
+	.calender-btn-msge {
+		position: relative;
+		left: 50px;
+
+		.calender-bottom-msge {
+			display: none;
+		}
+	}
+
+	.react-calendar {
+		position: relative;
+		left: 40px;
+	}
+}
+
+@media screen and (min-width: 769px) and (max-width: 1500px) {
+	.calender-with-price {
+		width: 25vw;
+	}
+
+	.calender-with-prices {
+		width: 25vw;
+	}
+
+	.calendar-container {
+		width: 25vw;
+	}
+
+	.search-date-container {
+		width: 25vw;
+	}
+}

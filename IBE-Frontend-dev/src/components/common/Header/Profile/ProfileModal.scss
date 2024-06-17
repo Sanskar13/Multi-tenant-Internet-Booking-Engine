@@ -1,0 +1,125 @@
+.react-responsive-modal-modal.modal {
+	max-width: 60%;
+	width: auto !important;
+	font-family: "Poppins", sans-serif !important;
+}
+
+.react-responsive-modal-overlay {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+
+.closeButton {
+	font-weight: bold;
+	display: flex;
+	justify-content: flex-end;
+	cursor: pointer;
+}
+
+.profileIcon {
+	margin-bottom: 24px; 
+	text-align: center;
+	font-size: 70px;
+}
+
+.userDetailsContainer {
+	text-align: center;
+}
+
+.userName {
+	font-size: 30px; 
+	font-weight: 600;
+}
+
+.userEmail {
+	font-size: 20px;
+	margin-bottom: 12px;
+}
+
+.walletBalance {
+	font-family: "Poppins", sans-serif;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.balanceText {
+	font-weight: normal;
+}
+
+.coinImage {
+	width: 40px;
+	height: 40px;
+	position: relative;
+	top: 4px;
+}
+
+.modalContainer {
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #fff;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	padding: 30px;
+	width: 40vw;
+}
+
+.closeButton {
+	display: flex;
+	justify-content: flex-end;
+	cursor: pointer;
+}
+
+.profileIcon {
+	margin-bottom: 24px;
+	text-align: center;
+	font-size: 70px;
+}
+
+.userDetailsContainer {
+	text-align: center;
+}
+
+.userName {
+	font-size: 40px;
+	font-weight: 600;
+}
+
+.userEmail {
+	font-size: 30px;
+	color: gray;
+	margin-bottom: 12px;
+}
+
+.walletBalance {
+	font-family: "Poppins", sans-serif;
+	font-size: 38px;
+	font-weight: bold;
+}
+
+.balanceText {
+	font-weight: normal;
+}
+
+.coinImage {
+	width: 40px;
+	height: 40px;
+	position: relative;
+	top: 4px;
+}
+
+.modalContainer {
+	.coinContainer {
+		perspective: 1000px;
+	}
+
+	.coinImage {
+		transition: transform 1s;
+		transform-style: preserve-3d;
+	}
+
+	&.flip .coinImage.flipped {
+		transform: rotateY(180deg);
+	}
+}

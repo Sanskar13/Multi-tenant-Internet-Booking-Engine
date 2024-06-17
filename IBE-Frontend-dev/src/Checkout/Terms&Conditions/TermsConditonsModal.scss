@@ -1,0 +1,22 @@
+.modal-container {
+	font-family: "Poppins", sans-serif;
+	.modal-content-terms {
+		list-style-type: style;
+		line-height: 1.5;
+	}
+
+	.tc-title {
+		font-size: 25px;
+		font-weight: 600;
+		padding: 5% 5% 3% 2%;
+	}
+
+	.tc-desc {
+		padding-left: 4%;
+		list-style-type: disc; 
+	}
+
+	.react-responsive-modal-overlay {
+		background-color: rgba(0, 0, 0, 0.5);
+	}
+}

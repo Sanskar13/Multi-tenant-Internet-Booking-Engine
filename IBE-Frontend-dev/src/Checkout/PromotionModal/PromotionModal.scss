@@ -1,0 +1,24 @@
+.promotion-total {
+	font-size: 30px;
+	padding: 1rem;
+	padding-right: 7.5rem;
+	font-family: "Poppins", sans-serif;
+	font-weight: 600;
+}
+.promo-desc {
+	font-family: "Poppins", sans-serif;
+	font-weight: 350;
+	font-size: 17px;
+	padding-left: 5%;
+	width: 50%;
+}
+.promo-rate-detail {
+	font-family: "Poppins", sans-serif;
+	font-weight: 400;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 4.5rem 3rem 2rem 2rem;
+	font-size: 22px;
+}

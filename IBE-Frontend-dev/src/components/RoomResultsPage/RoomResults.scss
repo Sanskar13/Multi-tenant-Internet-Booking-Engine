@@ -1,0 +1,63 @@
+@import "../../utils//variable.scss";
+
+.room-result-page {
+	font-size: 20px;
+	width: 100vw;
+	background-color: $WHITE_COLOR;
+	height: 100%;
+
+	.banner {
+		background-color: $BROWN_COLOR;
+		height: 18vh;
+	}
+
+	.stepper {
+		background-color: $STEPPER_COLOR;
+		height: 8vh;
+	}
+
+	.room-result-main-container {
+		background-color: $WHITE_COLOR;
+		padding: 20px 61px;
+
+		.search-form {
+			margin: 5px;
+		}
+
+		.room-result-panel {
+			margin: 5px;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-evenly;
+			flex-wrap: wrap;
+			min-height: 80vh;
+
+			.room-results-filter {
+				border-radius: 5px;
+				background-color: $STEPPER_COLOR;
+				min-width: 18%;
+				height: 30%;
+				margin-top: 15px;
+				margin-right: 15px;
+			}
+
+			.room-results-cards {
+				width: 75%;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.room-result-page {
+		height: 100%;
+
+		.banner {
+			display: none;
+		}
+	}
+
+	.room-results-filter {
+		width: 100vw;
+	}
+}

@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.reservations-details {
+	font-family: "Poppins", sans-serif;
+	font-size: 15px;
+	.booking {
+		border: 1px solid #000;
+		border-radius: 5px;
+		margin-top: 20px;
+		margin-left: 10%;
+		margin-right: 10%;
+		margin-bottom: 2%;
+		padding: 20px 20px;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		transition: box-shadow 0.3s ease;
+		cursor: pointer;
+
+		&:hover {
+			box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+			transform: translateY(-4px);
+		}
+	}
+
+	.link-no-style {
+		text-decoration: none;
+		color: inherit;
+	}
+
+	.link-no-style:hover {
+		text-decoration: none;
+	}
+
+	.loader-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 40vh;
+	}
+
+	.no-bookings-message {
+		display: flex;
+		justify-content: center;
+		font-size: 30px;
+		font-weight: 700;
+	}
+
+	.booked-room-details {
+		.roomtype-cancel {
+			display: flex;
+			justify-content: space-between;
+			font-size: 1.3rem;
+
+			.room-type-name {
+				font-weight: 700;
+			}
+
+			.room-member-count {
+				display: flex;
+				align-items: center;
+				margin-left: 15px;
+				.guest-count {
+					margin-left: 5px;
+					font-size: 14px;
+					color: #5d5d5d;
+					font-weight: 400;
+				}
+			}
+
+			.cancel-btn {
+				font-size: 1.2rem;
+				font-weight: 300;
+			}
+		}
+
+		.booked-room-details {
+			display: flex;
+			margin: 20px 0px;
+			flex-direction: row;
+			width: 100%;
+
+			.room-img {
+				width: 40%;
+			}
+
+			.booked-room-info {
+				width: 100%;
+				padding-left: 20px;
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-start;
+
+				.check-date {
+					width: 100%;
+					display: flex;
+				}
+
+				.room-package {
+					width: 45%;
+					.package-name {
+						font-weight: 600;
+						font-size: 1.3rem;
+						margin-top: 10px;
+					}
+
+					.package-desc {
+						color: #5d5d5d;
+						margin-top: 10px;
+					}
+				}
+
+				.policy {
+					display: flex;
+					justify-content: space-between;
+					margin-top: 25px;
+
+					.cancellation-policy {
+						color: #5d5d5d;
+						font-size: 17px;
+					}
+					.total-price {
+						font-weight: 400;
+						font-size: 20px;
+					}
+				}
+			}
+		}
+	}
+}
