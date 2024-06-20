@@ -1,0 +1,9 @@
+
+}
+java:S14885"`Immediately return this expression instead of assigning it to the temporary variable "response".(áÍú8ç™ºÎë1
+_
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8¨õ’Ëë1
+b
+java:S1117K"@Rename "objectMapper" which hides the field declared at line 25.(¡ôó‰ùÿÿÿÿ8Õ»Îë1
+A
+java:S1168_"$Return an empty map instead of null.(¥¹ï8±Õ»Îë1

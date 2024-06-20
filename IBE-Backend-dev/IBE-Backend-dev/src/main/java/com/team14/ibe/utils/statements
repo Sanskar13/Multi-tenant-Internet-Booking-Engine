@@ -1,0 +1,30 @@
+INSERT INTO purchases (id, travelfirst_name, travellast_name, travelphone, travelemail, billingfirst_name, billinglast_name, address1, address2, billingemail, billingphone, card_number, cvv_code, exp_month, exp_year, zip)
+VALUES (14, 'Alice', 'Smith', '5551234567', 'alice@example.com', 'Alice', 'Smith', '456 Oak St', 'Apt 202', 'billing@example.com', '5559876543', '9876543210987654', '456', '10', '2025', '54321');
+
+
+INSERT INTO booking_concurrency (check_in_date, check_out_date, id, room_id)
+VALUES ('2024-06-11', '2024-06-11', 1, 817);
+
+INSERT INTO booking_concurrency (check_in_date, check_out_date, id, room_id)
+VALUES ('2024-06-11', '2024-06-11', 2, 835);
+
+
+new entity parameters
+
+INSERT INTO purchases (nightly_rate, promocode_special_price, subtotal, tax_amount, total_amount, total_price, vat_amount, end_date, id, start_date, address1, address2, billingemail, billingfirst_name, billinglast_name, billingphone, booking_id, card_number, city, country, exp_month, exp_year, state, travelemail, travelfirst_name, travellast_name, travelphone, zip)
+VALUES (100, 0, 100, 10, 110, 120, 10, '2024-04-15', 14, '2024-04-10', 'Address1', 'Address2', 'billing@example.com', 'John', 'Doe', '1234567890', 14, '1234 5678 9012 3456', 'City', 'Country', '12', '2025', 'State', 'travel@example.com', 'Alice', 'Smith', '9876543210', '12345');
+
+
+INSERT INTO purchases (adult_count, child_count, nightly_rate, price_factor, promocode_special_price, property_id, status_id, subtotal, tax_amount, teen_count, total_amount, total_price, vat_amount, end_date, id, start_date, address1, address2, billingemail, billingfirst_name, billinglast_name, billingphone, booking_id, card_number, city, country, exp_month, exp_year, image_link, promotion_description, promotion_title, room_name, state, travelemail, travelfirst_name, travellast_name, travelphone, zip) VALUES (1, 0, 100.0, 1.0, 0.0, 1000, 1, 100.0, 10.0, 0, 110.0, 110.0, 0.0, '2024-06-20T00:00:00.000Z'::TIMESTAMPTZ, 11, '2024-06-13T00:00:00.000Z'::TIMESTAMPTZ, 'Address 1', 'Address 2', 'billing@example.com', 'John', 'Doe', '1234567890', '123ABC', '1234 5678 9012 3456', 'City', 'Country', '01', '2025', 'https://example.com/image', 'Example Promotion Description', 'Example Promotion', 'Example Room', 'State', 'travel@example.com', 'John', 'Doe', '1234567890', '12345');
+
+
+// cancel booking
+
+query MyQuery {
+  listRoomAvailabilities(where: {booking_id: {equals: 11}}) {
+    availability_id
+    booking_id
+  }
+}
+
+select * from room_availability where booking_id != 0;

@@ -1,0 +1,10 @@
+
+q
+java:S1192W"ODefine a constant instead of duplicating this literal "room_type_name" 3 times.(ìÎçŞıÿÿÿÿ8ÖÀµƒé1
+l
+java:S11921"JDefine a constant instead of duplicating this literal "x-api-key" 4 times.(¿Ğ¾æıÿÿÿÿ8×Àµƒé1
+X	java:S107{"<Method has 8 parameters, which is greater than 7 authorized.(È®¥±8ûÀµƒé1
+n
+java:S3776,"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(ÀÑ®<8ıÀµƒé1
+o
+java:S3776{"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(È®¥±8’Áµƒé1

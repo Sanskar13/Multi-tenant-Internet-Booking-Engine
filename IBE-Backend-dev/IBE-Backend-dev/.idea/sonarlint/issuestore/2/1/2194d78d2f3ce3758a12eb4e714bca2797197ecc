@@ -1,0 +1,9 @@
+
+G	java:S106)"+Replace this use of System.out by a logger.(Û£öô8ƒáÏøì1
+G	java:S106."+Replace this use of System.out by a logger.(ëßŠ–8„áÏøì1
+c
+java:S11264"AReplace this if-then-else statement by a single return statement.(¸…æ˜ÿÿÿÿÿ8…áÏøì1
+t
+java:S6204A"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(íıˆóùÿÿÿÿ8†áÏøì1
+G	java:S106½"+Replace this use of System.out by a logger.(İ”ÕU8—áÏøì1
+H	java:S106¾"+Replace this use of System.out by a logger.(ÑùÍı8—áÏøì1
